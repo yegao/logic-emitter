@@ -1,0 +1,31 @@
+{
+  "name": "logic-emitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yegao/logic-emitter.git"
+  },
+  "keywords": [
+    "logic"
+  ],
+  "author": "ygg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yegao/logic-emitter/issues"
+  },
+  "homepage": "https://github.com/yegao/logic-emitter#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "rollup": "^0.68.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}
