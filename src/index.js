@@ -21,7 +21,7 @@ const target = function (origin,...args) {
 }
 
 const equal = function (origin,...args) {
-    if(len < 1){
+    if(args.length < 1){
         return false
     }
     const dest = args.pop()
