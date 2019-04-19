@@ -9,7 +9,7 @@ export default {
         strict: true,
         banner: `var global = this;`,
         file: './dist/index.min.js',
-        format: 'iife'
+        format: 'umd'
     },
     plugins:[
         // resolve(),
