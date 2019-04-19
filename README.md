@@ -1,7 +1,7 @@
 npm install -S logic-emitter
 
 ```javascript
-const { hit,target } = require('logic-emitter') 
+const { hit,target,equal } = require('logic-emitter') 
 const Harry = {
   name: 'Harry',
   age: 23,
@@ -25,6 +25,8 @@ console.log(
     hit(Harry,'son','wife','name'), // false
     target(Harry,'son','name'), // 'Heey'
     target(Harry,'wife','name'), // 'Marry'
+    equal(Harry,'wife','name','Marry'), // true
+    equal(Harry,'wife','name','John') // false
 )
 ```
 
