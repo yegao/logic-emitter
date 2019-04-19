@@ -21,12 +21,12 @@ const target = function (origin,...args) {
 }
 
 const equal = function (origin,...args) {
-    if(args.length < 1){
+    if(args.length && args.length < 1){
         return false
     }
     const dest = args.pop()
     const len = args.length;
-    for(let i = 0;i<len-1;i++) {
+    for(let i = 0;i<len;i++) {
         origin = origin[args[i]]
         if(origin === void(0)) {
             return false
