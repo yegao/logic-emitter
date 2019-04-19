@@ -1,7 +1,7 @@
 npm install -S logic-emitter
 
 ```javascript
-import {hit, target} from 'logic-emitter'
+const { hit,target } = require('logic-emitter') 
 const Harry = {
   name: 'Harry',
   age: 23,
@@ -18,12 +18,14 @@ const Harry = {
     age: 3
   }
 }
-hit(Harry,'wife','name'), // true
-hit(Harry,'son','name'), // true
-hit(Harry,'son','wife'), // false
-hit(Harry,'son','wife','name'), // false
-target(Harry,'son','name'), // 'Heey'
-target(Harry,'wife','name'), // 'Marry'
+console.log(
+    hit(Harry,'wife','name'), // true
+    hit(Harry,'son','name'), // true
+    hit(Harry,'son','wife'), // false
+    hit(Harry,'son','wife','name'), // false
+    target(Harry,'son','name'), // 'Heey'
+    target(Harry,'wife','name'), // 'Marry'
+)
 ```
 
 It is terrible do the logical in a long attribute chain
