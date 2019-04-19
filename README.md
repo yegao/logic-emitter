@@ -18,11 +18,12 @@ const Harry = {
     age: 3
   }
 }
-hit(Harry,'son','name') // true
-hit(Harry,'son','wife') // false
-hit(Harry,'son','wife','name') // true
-target(Harry,'son','name') // 'Heey'
-target(Harry,'wife','name') // 'Marry'
+hit(Harry,'wife','name'), // true
+hit(Harry,'son','name'), // true
+hit(Harry,'son','wife'), // false
+hit(Harry,'son','wife','name'), // false
+target(Harry,'son','name'), // 'Heey'
+target(Harry,'wife','name'), // 'Marry'
 ```
 
 It is terrible do the logical in a long attribute chain
